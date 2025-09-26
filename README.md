@@ -18,6 +18,7 @@ Este projeto é um chatbot inteligente para responder dúvidas sobre folha de pa
 ## 📂 Estrutura do projeto
 
 chatbot-payroll/
+```
 ├── data/
 ├── src/
 │ ├── main.py
@@ -30,7 +31,7 @@ chatbot-payroll/
 ├── poetry.lock
 ├── .env.example
 └── README.md
-
+```
 ---
 
 ## ⚡ Setup inicial
