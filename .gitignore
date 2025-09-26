@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+.env
+.env.example
+*.log
+poetry.lock
+
+# Streamlit cache
+.streamlit/
+
+# Testes e relatórios
+.pytest_cache/
+htmlcov/
+coverage.xml
+.coverage
+
+# VSCode
+.vscode/
+
+# PyCharm
+.idea/
+
+# Arquivos de SO
+Thumbs.db
+.DS_Store
+
+# Arquivos de backup
+*~
+*.swp
