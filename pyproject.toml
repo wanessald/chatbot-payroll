@@ -1,7 +1,7 @@
 [project]
 name = "chatbot-payroll"
 version = "0.1.0"
-description = ""
+description = "Chatbot com RAG sobre folha de pagamento"
 authors = [
     {name = "wanessa",email = "wanessaldantas@gmail.com"}
 ]
@@ -11,8 +11,13 @@ dependencies = [
     "streamlit (>=1.50.0,<2.0.0)",
     "pandas (>=2.3.2,<3.0.0)",
     "python-dotenv (>=1.1.1,<2.0.0)",
-    "ollama (>=0.6.0,<0.7.0)",
-    "pytest (>=8.4.2,<9.0.0)"
+    "pytest (>=8.4.2,<9.0.0)",
+    "langchain (>=0.3.27,<0.4.0)",
+    "sentence-transformers (>=5.1.1,<6.0.0)",
+    "langchain-community (>=0.3.30,<0.4.0)",
+    "langchain-google-genai (>=2.1.12,<3.0.0)",
+    "fastapi (>=0.118.0,<0.119.0)",
+    "uvicorn (>=0.37.0,<0.38.0)"
 ]
 
 
