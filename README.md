@@ -28,11 +28,11 @@ Um chatbot em Python para responder perguntas sobre folha de pagamento com supor
 
 - Consultas à folha de pagamento via RAG/SQL:
 
--- Líquido recebido em determinado mês.
+- -  Líquido recebido em determinado mês.
 
--- Totais por período (ex.: trimestre).
+- -  Totais por período (ex.: trimestre).
 
--- Bônus, descontos (INSS, IRRF) e data de pagamento.
+- -  Bônus, descontos (INSS, IRRF) e data de pagamento.
 
 - Respostas formatadas em BRL (R$ 1.234,56) e datas no formato dd/mm/aaaa.
 
@@ -95,7 +95,7 @@ GEMINI_API_KEY=coloque_sua_chave_aqui
 
 5. **Prepare o banco de dados:**
 
-### O banco SQLite será gerado automaticamente a partir do payroll.csv na primeira execução.
+`O banco SQLite será gerado automaticamente a partir do payroll.csv na primeira execução.`
 
 ---
 
@@ -130,21 +130,21 @@ Os testes cobrem:
 
 1. Consulta simples (líquido por mês)
 
-"Quanto recebi (líquido) em maio/2025? (Ana Souza)"
+> "Quanto recebi (líquido) em maio/2025? (Ana Souza)"
 
-Esperado: R$ 8.418,75. Fonte: E001, 2025-05.
+> Esperado: R$ 8.418,75. Fonte: E001, 2025-05.
 
 2. Consulta agregada (trimestre)
 
-"Qual o total líquido de Ana Souza no 1º trimestre de 2025?"
+> "Qual o total líquido de Ana Souza no 1º trimestre de 2025?"
 
-Esperado: R$ 23.221,25 (jan+fev+mar). Fontes: E001, 2025-01..03.
+> Esperado: R$ 23.221,25 (jan+fev+mar). Fontes: E001, 2025-01..03.
 
 3. Consulta com BRL e datas
 
-"Quando foi pago o salário de abril/2025 do Bruno e qual o líquido?"
+> "Quando foi pago o salário de abril/2025 do Bruno e qual o líquido?"
 
-Esperado: 28/04/2025 e R$ 5.756,25. Fonte: E002, 2025-04.
+> Esperado: 28/04/2025 e R$ 5.756,25. Fonte: E002, 2025-04.
 
 ---
 
